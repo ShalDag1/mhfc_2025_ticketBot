@@ -60,7 +60,7 @@ def choose_location(driver,section,numOfTickets):
 
 def send_telegram_message(message, section_num): #send telegram messege that a ticket has been found
     chat_id = "-819945328"
-    bot_token = "5859153132:AAHva7RSPGoN1XQ_DD1EcHwRaWrw-ozzpVk"
+    bot_token = ""
     base_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     params = {
         "chat_id": chat_id,
@@ -74,8 +74,8 @@ def send_telegram_message(message, section_num): #send telegram messege that a t
         print(f"Failed to send message. Error code: {response.status_code}, Error message: {response.text}")'''
 
 if __name__ == "__main__":
-    username = "yardentziar@gmail.com"
-    password = "Almog1234!"
+    username = ""
+    password = ""
     login_link = "https://auth.mhaifafc.com/login"
     match_link = "https://tickets.mhaifafc.com/Stadium/Index?eventId=3190"
 
